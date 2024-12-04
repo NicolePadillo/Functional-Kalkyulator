@@ -1,0 +1,36 @@
+.Container {
+    background-color:#032F30;
+    width: 280px;
+    height:450px;
+    padding: 20px;
+    border-radius: 10px;
+    }
+body{
+      background-image:url(./M.jpg);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+input{
+        width: 95%;
+        height: 12%;
+        background-color: white;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+button{
+        height:75px;
+        width:23%;
+        background-color:#D7F5D3;
+        font-size: 20px;
+        
+    }  
+    
+    
+   
+    
+    

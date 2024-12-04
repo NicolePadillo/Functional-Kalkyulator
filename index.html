@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ako nag ubra ka dya maam:)</title>
+</head>
+<body>
+    <div class="Container">
+        
+        <input type="text" id="display" value=""disabled>
+        <br>
+        <button onClick="append('7')">7</button>
+        <button onClick="append('8')">8</button>
+        <button onClick="append('9')">9</button>
+        <button onClick="append('+')">+</button>
+        
+        <br>
+        <button onClick="append('4')">4</button>
+        <button onClick="append('5')">5</button>
+        <button onClick="append('6')">6</button>
+        <button onClick="append('-')">-</button>
+        <br>
+        <button onClick="append('1')">1</button>
+        <button onClick="append('2')">2</button>
+        <button onClick="append('3')">3</button>
+        <button onClick="append('*')">×</button>
+        <br>
+        <button onClick="append('0')">0</button>
+        <button onClick="append('.')">.</button>
+        <button onClick="append('%')">%</button>
+        <button onClick="append('/')">÷</button>
+        <br>
+        <button onClick="append('00')">00</button>
+        <button onClick="backspace()">Del</button></button>
+        <button onClick="clear1()">C</button>
+        <button onClick="calculate()">=</button>
+    </div>
+    
+</body>
+</html>
+
+<script>    
+    let display= document.getElementById("display");
+    function append(value){
+        display.value += value;
+    }
+    function backspace(){
+        display.value = display.value.slice(0,-1);
+    }
+    function calculate (){
+        display.value= eval(display.value);
+    }
+    function clear1(){
+        display.value='';
+    }
+</script>
+        
